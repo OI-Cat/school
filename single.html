@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>算法学堂 - 官方网站 - 题解区 - 五月月赛题解</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">回到主页</a></h1>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+							<section>
+								<form class="search" method="get" action="#">
+									<input type="text" name="query" placeholder="Search" />
+								</form>
+							</section>
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="#">
+											<h3>Lorem ipsum</h3>
+											<p>Feugiat tempus veroeros dolor</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Dolor sit amet</h3>
+											<p>Sed vitae justo condimentum</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Feugiat veroeros</h3>
+											<p>Phasellus sed ultricies mi congue</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Etiam sed consequat</h3>
+											<p>Porta lectus amet ultricies</p>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions stacked">
+									<li><a href="#" class="button large fit">Log In</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">五月月赛题解</a></h2>
+										<p>Answers for May</p>
+									</div>
+									<div class="meta">
+										<a href="https://www.luogu.org/space/show?uid=148582" class="author"><span class="name">@穆春旭</span><img src="https://cdn.luogu.org/upload/usericon/148582.png" alt="" /></a>
+									</div>
+								</header>
+								<span class="image featured"><img src="https://s2.ax1x.com/2019/07/22/eiNAxA.png" alt="" /></span>
+								<a href="https://www.luogu.org/blog/mcx/post-ti-xie-suan-fa-xue-tang-wu-yue-yue-sai-quan-ti-xie">原博客，全部题解传送门</a>
+            <h4>Update:在这里的月赛题解防止粘贴代码，请注意。</h4>
+            <p>先来看一下月赛日志<br>
+            2019年5月09日下午：裴大佬向各个群里发布比赛通知<br>
+2019年5月10日下午：比赛地址被更改<br>
+2019年5月10日下午：比赛开始<br>
+2019年5月10日下午：出题人little catAK比赛<br>
+2019年5月10日下午：选手穆春旭AC第10题，夺得奖励<br>
+2019年5月11日上午：洛谷评测机炸，提交不上罚分依旧<br>
+2019年5月11日上午：评测机恢复正常<br>
+2019年5月11日上午：裴大佬用程序方法AC第十题<br>
+2019年5月11日上午：比赛被修改，月赛出bug<br>
+2019年5月11日下午：热身题增加提示<br>
+2019年5月12日下午：比赛人数突破100人<br>
+2019年5月13日上午：广告位被卖出<br>
+2019年5月13日下午：自测赛被设立，等到比赛结束工作<br>
+2019年5月13日下午：穆春旭动手写此篇题解<br>
+2019年5月14日下午：第十题被改为100分<br>
+2019年5月16日下午：穆春旭敲到了这一行字<br>
+2019年5月19日下午：月赛出题组临时团队被解散<br>
+2019年5月19日下午：比赛结束，穆春旭1050分第一名<br>
+2019年5月20日下午：自测赛开始<br>
+2019年5月21日下午：该题解被发布在算法学堂官网上<br>
+2019年5月22日下午：奖励抽取视频发布，获奖：4、7、8号</p>
+        <hr><p>我是萌萌的分割线</p><hr>
+        <p>按照惯例，先上本人对此次比赛的评价。</p>
+        <img src="https://s2.ax1x.com/2019/05/29/Vn4LLj.png">
+<p>听说康熙也是原题qwq。。。<br>
+
+最新消息：热身题分值增加至100分，然后我也得到了100分<strike>和二月月赛一样，难题必裸......</strike></p>
+    <p>好了！让我们一起去看一看这个月月赛的题解！</p>
+    <hr><p>我是萌萌的分割线</p><hr>
+        <h4>T1:Q老师的烦恼</h4><p>先上100分代码，这个大家应该都会打。</p>
+    <img src="https://i.loli.net/2019/05/28/5ced18856314c53698.png"alt="...">
+    <p>当时看到高精n最这个设定时我是想开数组的......不过冷静下来想起了一句名人名言。</p>
+
+<blockquote>一切线性的题目可以一边输入一边输出，譬如P1115最大子段和。————沃茨基锁德</blockquote>
+<p>于是确定了目标把一个大数一位一位拆分，一位一位输入输出，不过冷静下来n有多少位还不知道......<strike>直接循环1000次，我NOIP2018PJT1标题统计都这么打的。</strike> 让我们认识一位新朋友：</p>
+<img src="https://i.loli.net/2019/05/28/5ced19593f04014347.png">
+<p>它的作用是有多少个数据输入多少个，常常用于：1.一组数据中有多个数据但未告诉你具体个数。2.有多组数据，并告诉“以-1（或0，1......具体情况具体分析）结尾”。不过此题只是输入输出，可以将算法简化。考虑到char类型每次cin读入只读入一个字符（以字符形式读入数字），故可得出AC代码。</p>
+
+<img src="https://i.loli.net/2019/05/28/5ced1992769f478891.png">
+
+        <h4>T2:西线</h4><p>
+
+这道题本身是体验如何出题的水题，没想到被选上了。 <br>手打数据很水的......你看这么水的题数据强弱都一样<br>
+
+总之典型的a+b问题，我也没高精。</p>
+<img src="https://i.loli.net/2019/05/28/5ced1a0e7094f12856.png">
+<p>给新人的福利题啊，我和李谁对你们好你们知道的（滑稽.jpg）</p>
+<img src="https://cdn.luogu.org/upload/pic/51119.png">
+        <h4>T3:夜渡特拉华河</h4><p>
+
+普及一下常识：所谓黑森州不是美国的一个州而是德国的一个州（滑稽.jpg），而是指来自黑森州（当时德国还没统一），被英国派去北美雇佣军。这只军队很弱的，在历史上华盛顿几乎全歼敌军，一战成名。不过并没有阻挡英军攻克纽约的脚步。<br>
+
+好吧你可以不知道黑森州的首府但你不能不知道在该州的德国第五大城市——<strike>提来米苏</strike>法兰克福。讽刺的是纽约州的首府也不是纽约。<strike>额，我好像离题万里了......<br>言归正传，本来想打个switch-case-break分支结构的，不过最后还是觉得if顺手。同样水题，附上代码。</strike></p>
+<img src="https://s2.ax1x.com/2019/05/29/Vn5PlF.jpg">
+
+<img src="https://i.loli.net/2019/05/28/5ced1c1f9047040998.png">
+
+    <h4>T4:MarkAlgorithm</h4><p>
+
+     一个<strike>超级水的</strike>模拟<br>
+这题顺序有毒......建议把它放到后面做。<br>
+
+     首先特判一下特殊命令，这个大家应该都能想到。</p>
+    <img src="https://s2.ax1x.com/2019/05/29/Vn5lOH.png" alt="Vn5lOH.png" border="0" />
+    <p><strike>然后看了样例惊奇的发现可能读入两位数</strike><br>
+
+再认识一位新朋友，atoi()函数，此函数由苏大佬和裴大佬友情提供。作用是把一个字符串转化成一个整数（若为小数则向下取整）。没看明白？百度一下！<br>
+
+百度百科（atoi）<br>
+    </p>
+    <a href="https://baike.baidu.com/item/atoi/10931331?fr=aladdin">传送门</a>
+    <p>要开一个字符数组，看一下数据范围。</p>
+    <img src="https://s2.ax1x.com/2019/05/29/Vn5Ykt.png" alt="Vn5Ykt.png" border="0" />
+<p>只说命令字符个数，没说数据大小？！接下来还有很多题这个风格，习惯就好。<br>
+
+  看着开吧，10位数总够了吧......<strike>乐多赛制，尽量开大点，否则津津那道题就是下场</strike><br>
+
+由于除了特判命令，其他命令都是成对出现的，因此可以想出AC代码。
+    </p>
+    <img src="https://s2.ax1x.com/2019/05/29/Vn5w6g.png" alt="Vn5w6g.png" border="0" />
+    <h4>T5:AKIOI</h4>
+
+<p>机房惨案，多逛逛洛谷你就知道什么意思了。<br>
+
+<strike>此处传来一班某同学被禁言的声音（嘴没封死加胶布，滑稽.jpg）</strike><br>
+
+  此题相比T4不是一般的水，一个for能解决的模型题。还有推荐的标准输入输出应该指读入优化scanf()和写出优化printf()。读优麻烦还只输入一个数，作用不大；于是打了个写优AC。</p>
+   <img src="https://s2.ax1x.com/2019/05/29/VnI9AI.png" alt="VnI9AI.png" border="0" />
+    <p>等等，别被出题人骗了，数据根本就不需要写优。284毫秒小于一秒。（测试中输入的n=1000）</p>
+    <img src="https://s2.ax1x.com/2019/05/29/VnIAgS.png" alt="VnIAgS.png" border="0">
+    <p>不过printf确实是碾压，168:284（滑稽.jpg）</p>
+<img src="https://s2.ax1x.com/2019/05/29/VnIk38.png" alt="VnIk38.png" border="0">
+        <h4>T6:不高兴的津津</h4>
+        <p>CCF（啊欠）：“是谁在议论我。”（滑稽.jpg）<br>
+
+          以下津津三连传送门：</p>
+        <a href="https://www.luogu.org/problemnew/show/P1085">不高兴</a>
+        <a href="https://www.luogu.org/problemnew/show/P1089">储蓄计划</a>
+        <a href="https://www.luogu.org/problemnew/show/P3984">高兴</a>
+        
+    <p>吐槽一下，看不出什么防骗系统，防骗不应该用SpecialJudge吗？<br>
+
+      好了，虽然题目的数据范围一片空白，但是一位资深被卖拐卖担架罚分人员还是要告诉你：数据可能很大。以下是标准没开高精的下场。</p>
+    <img src="https://s2.ax1x.com/2019/05/29/VnI13T.png" alt="VnI13T.png" border="0" />
+    <p>好了看题。需要计算（一个大数+给定的数的和）mod5的余数。<strike>我相信高精那堂课大家都是云里雾里的，于是打了一个非高精算法。</strike><br>
+
+根据模法分配率，(a+b)%k=(a%k+b%k)%k（%表示取余数），给定的数好办，余数为4，接下来就是要取输入的数的尾数了（小学体育老师：除以五的余数只与该数的个位有关）。不过好像依旧不知道这个数有多少位......<br>
+
+      我的应对方法是覆盖输入，依然依靠char类型。字符0-9强转数字0-9值为ASCII码，要减48。以下AC代码。</p>
+    <img src="https://s2.ax1x.com/2019/05/29/VnIJu4.png" alt="VnIJu4.png" border="0" />
+        <h4>T7:小F的电脑</h4>
+        <p>01背包裸题，全程抄采药。以下原题连接。</p>
+        <a href="https://www.luogu.org/problemnew/show/P1048">采药 P1048</a>
+<img src="https://s2.ax1x.com/2019/05/29/VnIhPP.png" alt="VnIhPP.png" border="0" />
+        
+<p>原封不动可以AC。依然没告诉数据范围，大点开小心越界RE。<br>
+
+  T8和T9可以选看，因为我也不太明白（滑稽.jpg）
+  
+        <h4>T8：康熙环球</h4>
+
+    <p>我没AC此题！我没AC此题！我没AC此题！（说三遍.jpg）<br>
+
+          不过依旧总结出了点规律......</p>
+<img src="https://s2.ax1x.com/2019/05/29/VnIvGV.png" alt="VnIvGV.png" border="0" />
+   <p>此题一上来就给了我们3个问题。<br>
+
+1.求出追及速度。<br>
+
+2.确定追及路程。<br>
+
+3.求出时间。<br>
+
+问题1比较好解决，每个单位时间都会缩短|m-n|个单位长度。问题2，也比较好理解，分四种情况讨论初始距离，然后每追及一圈+一个l。所以现在问题就变成：<br>
+
+有在整数情况下关于x和y的不定方程a+xb=y，使解中x最小。<br>
+
+算到这里，本人打了一个骗分，仅供参考。<br>
+        </p>
+        <img src="https://s2.ax1x.com/2019/05/29/VnoQZd.png" alt="VnoQZd.png" border="0" />
+        <p>比较有效，在未被罚分的情况下能得60，及格。<br>
+
+以下出题人的标程，突然觉得我A难题的实力好差qwq。
+        </p>
+<img src="https://s2.ax1x.com/2019/05/29/Vno1II.jpg" alt="Vno1II.jpg" border="0" />
+        <img src="https://s2.ax1x.com/2019/05/29/VnoXeH.png" alt="VnoXeH.png" border="0" />
+        <h4>T9:穿越时光</h4>
+<p>
+此题没什么好说的了，深蓝题。这里应该没人能做出来吧......<br>
+
+不仅没人会做，也应该没人会出（滑稽.jpg）所以必定裸题<br>
+
+  依旧是大规模刷（读作kan，一声。滑稽.jpg）洛谷深蓝题库，找到题目原型。本题原型<a href="https://www.luogu.org/problemnew/show/P4005">P4005小Y和地铁</a><br>
+  
+        以后不建议出这种题，光速逃...
+
+        </p>
+        <h4>T10：热身题</h4>
+        <p>找规律，但貌似不是语文题......t4貌似能给你灵感<br>
+
+          规律：第一行为1.下一行行用“几个几”来表示上一行的连续的数。e.g：<br>
+          上一行：1 1 1<br>
+下一行：3 1//三个1<br>
+
+上一行：1 1 1 3 3<br>
+下一行：3 1 2 3//三个1+两个3<br>
+          以下是第二十个点的数据。也不太多<strike>就三百零二个数</strike></p>
+        <img src="https://s2.ax1x.com/2019/05/29/VnofeJ.png" alt="VnofeJ.png" border="0" />
+        <p>敲得眼睛都瞎了,月赛出bug，还要再提交一遍（此处想吐槽）<br>
+          作为一个数学课代表，穆某提出一个数学问题：如果该题有足够多个测试点，可不可能出现数字4，为什么？</p>
+
+ <hr><p>我是萌萌的分割线</p><hr>
+        <h4>总结</h4><p>
+
+过去的都过去了，毕竟对于萌新来说，130+人参赛，冲上前3或前10很难。<br>
+
+不过题目的友善程度还是保持了极大的克制。而且相比三月月赛（这个萌新们不必了解）来说，奖励还是比较丰厚的。<br>
+
+Q老师半对，西线特拉华河AKIOI全对，400分应该大家都能拿到。<br>
+
+题目顺序很毒瘤，不过你复赛考试时也有可能遇到这种情况......建议大家把卷子拿回来后先把题看一遍<br>
+
+五月月赛本来是有加赛的，冠军奖励是B站一个月大会员（想想就激动）不过貌似取消了<br>
+
+十天的时间还是很多的，一道没AC的题放着坐等被别人反超，修改再次被罚分，这种绝望想必大家都经历过<br>
+
+还有就是不要照抄题解，不然与其他人暗合加上反作弊系统抽风容易被当做作弊...<strike>已经有先例了这里不方便举出...</strike><br>
+
+最后祝你AK IOI，再见。<p>
+         <hr><p>我是萌萌的分割线</p><hr>
+        <h6>by 穆春旭</h6>
+<h6>第二次修改于旧历108年春5月20日深夜于敝人茅庐</h6>
+<h6>第三次修改于旧历108年春5月26日傍晚于楼下罗森</h6>
+    </div>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
